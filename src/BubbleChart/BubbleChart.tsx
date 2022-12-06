@@ -189,6 +189,17 @@ class BubbleChart extends React.Component<
                         {txt}{" "}
                       </tspan>
                     );
+                  } else if (idx === 2) {
+                    const { dy, dx } =
+                      props.bubblesData[index].dYdX3 !== undefined
+                        ? props.bubblesData[index].dYdX3
+                        : this.setTextPosition(idx, txt, content);
+                    return (
+                      <tspan dy={dy} dx={dx}>
+                        {" "}
+                        {txt}{" "}
+                      </tspan>
+                    );
                   } else {
                     const { dy, dx } = this.setTextPosition(idx, txt, content);
                     return (
@@ -252,6 +263,7 @@ interface IBubbleChartState {
   scale: { x: number; y: number };
   dYdX1?: { dy: number; dx: number };
   dYdX2?: { dy: number; dx: number };
+  dYdX3?: { dy: number; dx: number };
 }
 
 export default BubbleChart;

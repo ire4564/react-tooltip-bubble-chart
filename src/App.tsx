@@ -68,7 +68,7 @@ function App() {
         backgroundColor="white"
         minValue={1}
         maxValue={150}
-        move={false}
+        move={true}
       />
     </div>
   );
