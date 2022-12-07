@@ -13,6 +13,7 @@
   "keywords": [
     "react",
     "bubble-chart",
+    "tooltip-bubble-chart",
     "d3-chart",
     "react-bubble-chart",
     "d3"
@@ -21,6 +22,21 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ire4564/react-d3-tooltip-bubble-chart/issues"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "dependencies": {
+    "d3": "^7.6.1",
+    "d3-force": "^3.0.0",
+    "@types/d3": "^7.4.0",
+    "@types/d3-force": "^3.0.3",
+    "react-uuid": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.3 <0.12",
+    "npm": "~1.0.20"
   },
   "homepage": "https://github.com/ire4564/react-d3-tooltip-bubble-chart#readme"
 }
