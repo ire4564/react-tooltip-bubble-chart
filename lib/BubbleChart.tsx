@@ -90,7 +90,7 @@ class BubbleChart extends React.Component<
       const { props } = this;
       const fontSize =
         this.radiusScale((item as unknown as BubbleChartTypes.ForceData).size) /
-        4;
+        3.2;
       let content =
         props.bubblesData.length > index ? props.bubblesData[index].name : "";
 
@@ -122,7 +122,9 @@ class BubbleChart extends React.Component<
                   })
                 }
                 onMouseLeave={() => this.setState({ hovered: false })}
-                style={{ cursor: this.state.hovered ? "pointer" : "default" }}
+                style={{
+                  cursor: this.state.hovered ? "pointer" : "default",
+                }}
                 id="circleSvg"
                 r={this.radiusScale(
                   (item as unknown as BubbleChartTypes.ForceData).size
@@ -230,9 +232,13 @@ class BubbleChart extends React.Component<
             position: "relative",
           }}
         >
-          <svg width={this.props.width} height={this.props.height}>
+          <svg
+            width={this.props.width}
+            height={this.props.height}
+            onMouseEnter={() => this.setState({ hovered: false })}
+          >
             {this.renderBubbles(this.state.data as [])}
-          </svg>
+          </svg>{" "}
           {this.state.hovered && (
             <BubbleTooltip
               hoverValue={this.state.hoverValue}

@@ -21,14 +21,15 @@ function App() {
       id: 2,
       name: "안녕\n어렵다",
       size: 120,
+      dYdX1: { dy: -3, dx: -2 },
+      dYdX2: { dy: 14, dx: -35 },
     },
     {
       theme: "white",
       fillColor: "white",
       id: 3,
       name: "블랙핑크\n아오오",
-      size: 120,
-      dYdX1: { dy: 0, dx: 10 },
+      size: 80,
     },
     {
       fillColor: "rgb(52, 202, 173, 0.3)",
@@ -41,7 +42,7 @@ function App() {
       fillColor: "rgb(52, 202, 173, 0.3)",
       id: 5,
       name: "일본\n경제",
-      size: 120,
+      size: 100,
     },
     {
       fillColor: "rgb(52, 202, 173, 0.3)",
@@ -53,7 +54,9 @@ function App() {
       fillColor: "rgb(52, 202, 173, 0.3)",
       id: 5,
       name: "한국\n성공안녕",
-      size: 120,
+      size: 50,
+      dYdX1: { dy: -3, dx: -2 },
+      dYdX2: { dy: 10, dx: -26 },
     },
   ];
 
