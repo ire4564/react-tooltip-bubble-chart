@@ -1,6 +1,5 @@
 # misc
 .DS_Store
-package-lock.json
 docs
 
 # IDE
