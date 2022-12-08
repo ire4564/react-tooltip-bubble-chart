@@ -7,8 +7,7 @@ import { BubbleChartTypes } from "./types";
 import BubbleTooltip from "./BubbleTooltip";
 import svgAlignKR from "./SvgAlignKR";
 import svgAlignEN from "./SvgAlignEN";
-
-const uuid = require("react-uuid");
+import uuid from "react-uuid";
 
 class BubbleChart extends React.Component<
   IBubbleChartProps,
@@ -35,7 +34,7 @@ class BubbleChart extends React.Component<
   }
 
   setForceData = (props: IBubbleChartProps) => {
-    const d = [];
+    const d: any[] = [];
     for (let i = 0; i < props.bubblesData.length; i++) {
       d.push({ size: props.bubblesData[i].size });
     }

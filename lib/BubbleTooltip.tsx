@@ -1,3 +1,5 @@
+import React from "react";
+
 const BubbleTooltip = (props: {
   hoverValue: { name: string };
   scales: { x: number; y: number };
