@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=d7a4d4f8b9a5"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
     "@storybook/testing-library": "^0.0.13",
     "@typescript-eslint/eslint-plugin": "^5.45.1",
     "babel-loader": "^8.3.0",
+    "chromatic": "^6.11.4",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
