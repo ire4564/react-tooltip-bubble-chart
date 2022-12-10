@@ -1,6 +1,6 @@
-# v1.0.0 (Sat Dec 10 2022)
+# v1.0.0 (Tue Mar 10 2022)
 
-- Created first version of the design system, with `BubbleChart`, `BubbleTooltip`, `BubbleChartStyle`, `SvgAlignEN` and `SvgAlignKR` components.
+- Created first version of the design system, with `BubbleChart` components.
 
 #### Authors: 1
 
