@@ -1,0 +1,19 @@
+.bubble-text {
+  word-break: break-all;
+}
+
+.keyword-tooltip {
+  font-size: 0.8rem;
+  position: absolute;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 45px;
+  background: #ffffff;
+  border: 1px solid #f6f6f6;
+  box-shadow: 3px 3px 20px rgba(225, 231, 235, 0.42);
+  border-radius: 4px;
+}
