@@ -7,9 +7,12 @@
     "release": "auto shipit --base-branch=master",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env BABEL_ENV=production babel src -d dist",
+    "chromatic": "npx chromatic --project-token=d7a4d4f8b9a5",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
-    "chromatic": "npx chromatic --project-token=d7a4d4f8b9a5"
+    "build-storybook": "build-storybook",
+    "serve-storybook": "serve storybook-static",
+    "vercel": "vercel dev",
+    "deploy": "vercel deploy"
   },
   "keywords": [],
   "author": "ire4564",
