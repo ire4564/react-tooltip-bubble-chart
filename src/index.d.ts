@@ -1,9 +1,9 @@
 import * as BubbleChart from "./BubbleChart";
-import * as BubbleChartStyle from "./BubbleChart/BubbleChartStyle";
 import * as BubbleTooltip from "./BubbleTooltip";
 import * as SvgAlignEN from "./SvgAlignEN";
 import * as SvgAlignKR from "./SvgAlignKR";
+import "./BubbleChartStyle.scss";
 
-export { BubbleChart, BubbleTooltip, BubbleChartStyle, SvgAlignEN, SvgAlignKR };
+export { BubbleChart, BubbleTooltip, SvgAlignEN, SvgAlignKR };
 
-export * from BubbleChart;
+export default BubbleChart;

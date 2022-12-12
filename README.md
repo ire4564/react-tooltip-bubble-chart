@@ -54,21 +54,6 @@ function Example() {
     },
     {
       fillColor: "rgb(52, 202, 173, 0.3)",
-      id: 2,
-      name: "Getting\nStart",
-      size: 120,
-      dYdX1: { dy: -2, dx: -4 },
-    },
-    {
-      fillColor: "rgb(52, 202, 173, 0.3)",
-      id: 3,
-      name: "Setting\nme",
-      size: 50,
-      dYdX1: { dy: -2, dx: -3 },
-      dYdX2: { dy: 8, dx: -20 },
-    },
-    {
-      fillColor: "rgb(52, 202, 173, 0.3)",
       id: 4,
       name: "Getting\nStart",
       size: 120,
