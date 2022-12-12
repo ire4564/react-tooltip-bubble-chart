@@ -39,28 +39,6 @@ function Example() {
   const bubbleData = [
     {
       fillColor: "rgb(52, 202, 173, 0.3)",
-      id: 0,
-      name: "Getting\nStart",
-      size: 120,
-      dYdX1: { dy: -2, dx: -4 },
-    },
-    {
-      fillColor: "rgb(52, 202, 173, 0.3)",
-      id: 1,
-      name: "Setting\nme",
-      size: 50,
-      dYdX1: { dy: -2, dx: -3 },
-      dYdX2: { dy: 8, dx: -20 },
-    },
-    {
-      fillColor: "rgb(52, 202, 173, 0.3)",
-      id: 4,
-      name: "Getting\nStart",
-      size: 120,
-      dYdX1: { dy: -2, dx: -4 },
-    },
-    {
-      fillColor: "rgb(52, 202, 173, 0.3)",
       id: 5,
       name: "Setting\nme",
       size: 50,
@@ -140,8 +118,16 @@ export namespace BubbleChartTypes {
 
 If you need intuitive usage, you can try this library right away through Storybook. You can check the operation more intuitively. Please refer to the information below.
 
+[✨Awsome Storybook Page✨](https://ire4564.github.io/react-tooltip-bubble-chart/?path=/story/example-bubblechart--move)
+
+If you want to run it yourself, follow the command below.
+
+```bash
+  cd /storybook && npm run storybook
+```
+
 <br/>
 
 ## 📜 License
 
-MIT &copy;
+MIT License
