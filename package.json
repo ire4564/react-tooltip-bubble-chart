@@ -1,8 +1,8 @@
 {
-  "name": "react-d3-tooltip-bubble-chart",
+  "name": "react-tooltip-bubble-chart",
   "version": "1.0.0",
   "description": "This is React bubble chart with tooltip to visualize data.",
-  "main": "index.js",
+  "main": "./dist/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
@@ -28,18 +28,17 @@
     "dist",
     "lib"
   ],
-  "dependencies": {
+  "homepage": "https://github.com/ire4564/react-d3-tooltip-bubble-chart#readme",
+  "devDependencies": {
     "@types/d3": "^7.4.0",
     "@types/d3-force": "^3.0.3",
     "@types/react": "^18.0.26",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "core-js": "^3.26.1",
     "d3": "^7.7.0",
     "d3-force": "^3.0.0",
     "react-dom": "^18.2.0",
-    "react-uuid": "^2.0.0"
-  },
-  "homepage": "https://github.com/ire4564/react-d3-tooltip-bubble-chart#readme",
-  "devDependencies": {
+    "react-uuid": "^2.0.0",
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.20.5",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
@@ -53,6 +52,7 @@
     "css-loader": "^6.7.2",
     "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
+    "semantic-release": "^19.0.5",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.4.2",
     "typescript": "^4.9.3",
@@ -66,5 +66,13 @@
     ">0.2%",
     "not dead",
     "not op_mini all"
+  ],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
   ]
 }

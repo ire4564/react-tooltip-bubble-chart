@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   mode: "production",
-  entry: "./index.js",
+  entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "../dist"),
     filename: "bundle.js",
@@ -31,7 +31,17 @@ module.exports = {
       {
         test: /\.(ts|tsx)$/i,
         exclude: /node_modules/,
-        use: "ts-loader",
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [
+              "@babel/preset-env",
+              "@babel/preset-react",
+              "@babel/preset-typescript",
+            ],
+            plugins: ["@babel/plugin-proposal-class-properties"],
+          },
+        },
       },
     ],
   },
