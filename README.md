@@ -1,22 +1,31 @@
 # react-tooltip-bubble-chart
 
-A multi-selector component for the sandbox project MIP. You can freely customize the `select-all` function and `select-one` and inside the pannel. This project was made using `react-multi-select-component` open source.
+![FILES](https://img.shields.io/github/directory-file-count/ire4564/react-tooltip-bubble-chart?style=for-the-badge)
+![LICENSE](https://img.shields.io/npm/l/react-tooltip-bubble-chart?style=for-the-badge)
+![DOWNLOADS](https://img.shields.io/npm/dt/react-tooltip-bubble-chart?style=for-the-badge)
 
-[![NPM](https://img.shields.io/npm/v/react-multi-select-component.svg)](https://github.com/ire4564/react-tooltip-bubble-chart)
+This is a bubble chart component that includes a tooltip using `d3`. I created a component based on `React` and `Typescript` by referring to the open source [Draw a bubble chart](https://medium.com/react-courses/who-doesnt-like-charts-draw-a-bubble-chart-with-react-d3-typescript-2faf998109e2). When the mouse `hovers` over the bubble chart object, the contents inside the bubble chart are displayed as a `tooltip`. You can also customize the movement of the bubble chart through the `move` setting. This library can be an excellent choice for data visualization. I hope this is what you were looking for.
+
+<br/>
 
 ## ✨ Features
 
 - ✌ Written TypeScript
 - ✅ Available in React
+- 💬 Possible Fine text alignment
 - 🌀 Available Interactive motion
-- 💕 Can Custom each bubble chart object
+- 💅 Can Custom each bubble chart object
 - 🌟 Can check the contents of the object as a tooltip
+
+<br/>
 
 ## 🔧 Installation
 
 ```bash
 npm install react-tooltip-bubble-chart #npm
 ```
+
+<br/>
 
 ## 📦 Example
 
@@ -109,22 +118,44 @@ function Example() {
 export default Example;
 ```
 
+## ✔ Bubble Chart DataType
+
+```tsx
+export namespace BubbleChartTypes {
+  export type Data = {
+    fillColor: string;
+    id: number;
+    name: string;
+    size: number;
+    dYdX1: { dy: number; dx: number };
+    dYdX2: { dy: number; dx: number };
+    dYdX3: { dy: number; dx: number };
+  };
+}
+```
+
+<br/>
+
 ## 👀 Props
 
-| Prop              | Description                                                | Type      | Test          |
-| ----------------- | ---------------------------------------------------------- | --------- | ------------- |
-| `bubblesData`     | value for `aria-labelledby`                                | `array`   | bubblesData[] |
-| `move`            | options for dropdown                                       | `boolean` | true          |
-| `width`           | pre-selected rows                                          | `number`  | 700           |
-| `height`          | toggle 'Select All' option                                 | `number`  | 470           |
-| `backgroundColor` | show spinner on select                                     | `string`  | white         |
-| `textFillColor`   | toggle dropdown on hover option                            | `string`  | #717C84       |
-| `minValue`        | [localization ↗](stories/recipes/localization.stories.mdx) | `number`  | 1             |
-| `maxValue`        | onChange callback                                          | `number`  | 150           |
+| Prop              | Description                                                  | Type      | Test          |
+| ----------------- | ------------------------------------------------------------ | --------- | ------------- |
+| `bubblesData`     | An array of text and `setting values` ​​for the bubble chart | `array`   | bubblesData[] |
+| `move`            | Bubble chart `animation` settings dropdown                   | `boolean` | true          |
+| `width`           | `Width` of the entire area of ​​the bubble chart             | `number`  | 700           |
+| `height`          | `Height` of the entire area of ​​the bubble chart            | `number`  | 470           |
+| `backgroundColor` | Set `background color` behind bubble chart                   | `string`  | white         |
+| `textFillColor`   | Change the `color of the text` inside the bubble chart       | `string`  | #717C84       |
+| `minValue`        | Bubble chart `minimum` weight value                          | `number`  | 1             |
+| `maxValue`        | Bubble chart `maximum` weight value callback                 | `number`  | 150           |
 
-|
+<br/>
 
 ## ⭕ Test
+
+If you need intuitive usage, you can try this library right away through Storybook. You can check the operation more intuitively. Please refer to the information below.
+
+<br/>
 
 ## 📜 License
 
