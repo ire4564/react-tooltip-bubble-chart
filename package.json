@@ -1,6 +1,6 @@
 {
   "name": "react-tooltip-bubble-chart",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is React bubble chart with tooltip to visualize data.",
   "main": "./dist/bundle.js",
   "scripts": {
