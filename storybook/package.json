@@ -9,10 +9,12 @@
     "build": "cross-env BABEL_ENV=production babel src -d dist",
     "chromatic": "npx chromatic --project-token=d7a4d4f8b9a5",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook",
     "serve-storybook": "serve storybook-static",
     "vercel": "vercel dev",
-    "deploy": "vercel deploy"
+    "deploy": "vercel deploy",
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "ire4564",
@@ -37,6 +39,7 @@
     "babel-preset-react-app": "^10.0.1",
     "chromatic": "^6.11.4",
     "cross-env": "^7.0.3",
+    "gh-pages": "^4.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -59,5 +62,5 @@
   "bugs": {
     "url": "https://github.com/ire4564/react-d3-tooltip-bubble-chart/issues"
   },
-  "homepage": "https://github.com/ire4564/react-d3-tooltip-bubble-chart#readme"
+  "homepage": "http://ire4564.github.io/react-d3-tooltip-bubble-chart"
 }
