@@ -1,5 +1,5 @@
 import "./App.css";
-import BubbleChart from "./BubbleChart/BubbleChart";
+import BubbleChart from "react-tooltip-bubble-chart";
 
 function App() {
   const data = [
