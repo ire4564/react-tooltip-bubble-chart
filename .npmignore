@@ -2,6 +2,10 @@
 *.iml
 coverage/
 examples/
+stories/
+storybook-static/
+CHANGELOG.md
+main.js
 node_modules/
 typings/
 sandbox/

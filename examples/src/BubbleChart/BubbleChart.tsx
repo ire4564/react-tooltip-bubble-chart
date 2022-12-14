@@ -2,7 +2,7 @@
 import React from "react";
 import * as d3 from "d3";
 import { Simulation, SimulationNodeDatum } from "d3-force";
-import "./BubbleChart.scss";
+import "./BubbleChartStyle.scss";
 import { BubbleChartTypes } from "./types";
 import BubbleTooltip from "./BubbleTooltip";
 import svgAlignKR from "./SvgAlignKR";
@@ -143,8 +143,7 @@ class BubbleChart extends React.Component<
                 className="bubble-text"
                 fill={
                   props.bubblesData[index].theme === "white" ||
-                  props.bubblesData[index].fillColor ===
-                    "rgb(52, 202, 173, 0.3)"
+                  props.bubblesData[index].fillColor !== undefined
                     ? this.props.textFillColor
                     : "white"
                 }

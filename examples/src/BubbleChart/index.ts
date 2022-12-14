@@ -1,3 +1,3 @@
 import BubbleChart from "./BubbleChart";
 
-export { BubbleChart };
+export default BubbleChart;
