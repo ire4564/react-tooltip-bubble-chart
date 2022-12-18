@@ -1,11 +1,16 @@
-const path = require("path");
+// const path = require("path");
+import path from "path";
+const __dirname = path.resolve();
 
-module.exports = {
+export default {
   mode: "production",
   entry: "./lib/index.ts",
   output: {
     path: path.resolve(__dirname, "./dist"),
     filename: "index.d.ts",
+    library: {
+      type: "module",
+    },
   },
   module: {
     rules: [
@@ -47,5 +52,8 @@ module.exports = {
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx", ".json", "...", "*"],
+  },
+  experiments: {
+    outputModule: true,
   },
 };
