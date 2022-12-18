@@ -32,7 +32,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "react-tooltip-bubble-chart": "file:react-tooltip-bubble-chart-1.0.34.tgz",
     "react-uuid": "^2.0.0",
     "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
@@ -72,5 +71,8 @@
   "bugs": {
     "url": "https://github.com/ire4564/react-d3-tooltip-bubble-chart/issues"
   },
-  "homepage": "http://ire4564.github.io/react-d3-tooltip-bubble-chart"
+  "homepage": "http://ire4564.github.io/react-d3-tooltip-bubble-chart",
+  "dependencies": {
+    "react-tooltip-bubble-chart": "file:../react-tooltip-bubble-chart-1.0.35.tgz"
+  }
 }

@@ -9,7 +9,7 @@ import svgAlignKR from "./SvgAlignKR";
 import svgAlignEN from "./SvgAlignEN";
 import uuid from "react-uuid";
 
-class BubbleChart extends React.Component<
+export default class BubbleChart extends React.Component<
   IBubbleChartProps,
   IBubbleChartState
 > {
@@ -269,5 +269,3 @@ interface IBubbleChartState {
   dYdX2?: { dy: number; dx: number };
   dYdX3?: { dy: number; dx: number };
 }
-
-export default BubbleChart;
