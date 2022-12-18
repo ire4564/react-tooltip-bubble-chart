@@ -1,1 +1,1 @@
-export * as BubbleChart from "./BubbleChart";
+export { default } from "./BubbleChart";
